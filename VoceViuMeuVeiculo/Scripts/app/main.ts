@@ -33,7 +33,7 @@ namespace app {
             });
 
             var googleLayer = new L.Google('ROADMAP');
-            //map.addLayer(googleLayer);
+            map.addLayer(googleLayer);
 
             map.addControl(drawControl);
 

@@ -26,7 +26,7 @@ var app;
                 }
             });
             var googleLayer = new L.Google('ROADMAP');
-            //map.addLayer(googleLayer);
+            map.addLayer(googleLayer);
             map.addControl(drawControl);
             map.on('draw:created', function (e) {
                 var layer = e.layer;
