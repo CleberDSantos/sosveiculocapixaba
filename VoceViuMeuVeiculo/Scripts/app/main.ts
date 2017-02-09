@@ -6,8 +6,7 @@ namespace app {
         constructor() {
 
             var map = new L.Map('map', { center: new L.LatLng(-20.346545, -40.360107), zoom: 9 });
-            var googleLayer = new L.Google('ROADMAP');
-            map.addLayer(googleLayer);
+           
 
             map.locate({ setView: true, maxZoom: 16 });
 
@@ -33,11 +32,13 @@ namespace app {
                 }
             });
 
+            var googleLayer = new L.Google('ROADMAP');
+            map.addLayer(googleLayer);
+
             map.addControl(drawControl);
 
             map.on('draw:created', (e : any) => {
-                var type = e.layerType,
-                    layer = e.layer;
+                var layer = e.layer;
 
                 drawnItems.addLayer(layer);
             });
