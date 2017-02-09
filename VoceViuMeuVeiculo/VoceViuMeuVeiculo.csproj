@@ -142,7 +142,9 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\spritesheet-2x.png" />
     <Content Include="Content\images\spritesheet.png" />
+    <Content Include="Content\images\spritesheet.svg" />
     <Content Include="Content\leaflet.draw.css" />
     <Content Include="Content\semantic-ui-rtl\components\accordion.js" />
     <Content Include="Content\semantic-ui-rtl\components\accordion.min.js" />
